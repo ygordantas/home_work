@@ -3,130 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro to HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
   </head>
+
   <body>
     <header>
-      <h1>Intro to HTML</h1>
-      <h3>A basic overview of HTML to help with intro to MERN</h3>
+      <h1>Ygor D. Furtado</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic esse
+        possimus dolor repellendus officia molestias at quis? Inventore id
+        velit, obcaecati labore reiciendis esse natus sapiente ipsam minus porro
+        cum!
+      </p>
     </header>
 
     <main>
-      <section>
-        <h4>Headings</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-      </section>
+      <section id="project_section">
+        <h2>Projects</h2>
+        <ul>
+          <li class="project_card">
+            <a href="#">
+              <img
+                src="https://media.istockphoto.com/id/1490535382/photo/2024-goal-plan-action-checklist-text-on-note-pad-with-laptop-glasses-and-pen.jpg?s=612x612&w=is&k=20&c=uqmIjrx8Y-1hUtZS9552XfQHXItlrzrGpp9uzT1-vcQ="
+                alt="Project 1"
+              />
+            </a>
 
-      <section>
-        <h4>Images section</h4>
-        <img
-          style="height: 300px"
-          src="https://images.unsplash.com/photo-1718046254335-d9ff832c9c3c?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <img
-          style="height: 300px"
-          src="./nani-williams-9LWb3ktZBRM-unsplash.jpg"
-        />
-      </section>
-
-      <section>
-        <h4>Links</h4>
-
-        <a href="/contact.html">Contact us</a>
-
-        <a href="https://www.google.com" target="_blank">Link to google</a>
-
-        <a href="https://www.youtube.com" target="_blank">
-          <img
-            style="height: 300px"
-            src="https://images.unsplash.com/photo-1718046254335-d9ff832c9c3c?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        /></a>
-      </section>
-
-      <section>
-        <h4>Grouping elements</h4>
-        <div>
-          <h5>Divs</h5>
-          <div>
-            <p>Div 1</p>
-            <p>Div 2</p>
-            <p>Div 3</p>
-          </div>
-
-          <section>
-            <h5>Sections</h5>
-            <section>
-              <p>Section 1</p>
-              <p>Section 2</p>
-              <p>Section 3</p>
-            </section>
-          </section>
-      </section>
-
-      <section>
-        <h4>List elements</h4>
-        <div>
-          <h5>Unordered List</h5>
-          <ul>
-            <li>
-              <div>
-                <p>hello</p>
-                <a href="https://www.youtube.com" target="_blank">
-                  <img
-                    style="height: 300px"
-                    src="https://images.unsplash.com/photo-1718046254335-d9ff832c9c3c?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                /></a>
-              </div>
-            </li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Ordered List</h5>
-          <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ol>
-        </div>
-      </section>
-
-      <section>
-        <h4>Table</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Age</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td >
-             <td>25</td>
-            </tr>
-            <tr>
-              <td>Jane</td>
-              <td>Doe</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>John</td>
-              <td>Smith</td>
-              <td>30</td>
-            </tr>
-            </tbody>
-        </table>
+            <h3>Project 1</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, magnam nisi ut ipsa quaerat sequi, adipisci,
+              consequatur numquam veniam iste voluptatum quisquam consectetur
+              quasi officia quae eaque fuga vel nesciunt.
+            </p>
+          </li>
+          <li class="project_card">
+            <a href="#">
+              <img
+                src="https://media.istockphoto.com/id/1334810623/photo/business-team-discussing-together-during-meeting-at-office-colleagues-workshopping-business.jpg?s=612x612&w=is&k=20&c=jRGjr8U-kfKCEAFAlOOcDQaTVgf5OSDwkT0YatH4DsQ="
+                alt="Project 3"
+              />
+            </a>
+            <h3>Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, ea adipisci. In deserunt obcaecati fugit atque nihil
+              libero fuga quam iste provident. Laborum architecto similique
+              commodi minima nihil vitae deserunt!
+            </p>
+          </li>
+          <li class="project_card">
+            <a href="#">
+              <img
+                src="https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4="
+                alt="Project 3"
+              />
+            </a>
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+              dolorum numquam in illo reprehenderit error rerum mollitia totam,
+              quae fuga earum doloremque? Nemo architecto neque delectus
+              voluptate, enim asperiores laborum!
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
 
