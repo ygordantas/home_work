@@ -27,7 +27,7 @@
         cum!
       </p>
     </header>
-    
+
     <main>
       <section id="project_section">
         <h2 class="section_title">Projects</h2>
@@ -124,6 +124,52 @@
         /></a>
       </div>
       <p>Established in 2024</p>
+      <button id="example_btn">Click me</button>
     </footer>
+    <script>
+      // get element
+      const myBtn = document.getElementById("example_btn");
+
+      // declare function
+      function myFunction() {
+        alert("Hello Friend!");
+      }
+
+      // register event
+      myBtn.addEventListener("click", myFunction);
+
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded and parsed");
+      });
+      //reserved keywords
+      // variables values I can have
+
+      //Primitive data types
+      //String, numbers, boolean
+      // let text = "hello world from comit";
+      // let number = 2.5;
+      // let booleans = false;
+
+      //references types
+      //Array, object, functions
+
+      const array = [1, 2, 3, 4];
+      //0 based index
+
+      array[0];
+
+      // const myObj = {
+      //   name: "Ygor",
+      //   age: 25,
+      //   isStudent: false,
+      //   grades: [40, 60],
+      //   address: {
+      //     street: "1234",
+      //     city: "Toronto",
+      //   },
+      // };
+    </script>
   </body>
 </html>
