@@ -42,7 +42,24 @@ for (let index = 0; index < projects.length; index++) {
   li.appendChild(img);
   li.appendChild(description);
 
-  li.addEventListener("click", onProjectCardClickHandler);
+  li.addEventListener("click", () => onProjectCardClickHandler(index));
+
+  // li.addEventListener("click", () => {
+  //   const modalContent = document.getElementById("modal_content");
+  //   const selectedProject = projects[index];
+
+  //   const titleElement = modalContent.querySelector("h2");
+  //   titleElement.textContent = selectedProject.title;
+
+  //   const descriptionElement = modalContent.querySelector("p");
+  //   descriptionElement.textContent = selectedProject.description;
+
+  //   const imageElement = modalContent.querySelector("img");
+  //   imageElement.src = selectedProject.imageSrc;
+  //   imageElement.alt = selectedProject.title;
+
+  //   modal.classList.remove("hide");
+  // });
 
   projectsContainer.appendChild(li);
 }
@@ -51,7 +68,20 @@ function onCloseModalButtonClickHandler() {
   modal.classList.add("hide");
 }
 
-function onProjectCardClickHandler() {
+function onProjectCardClickHandler(index) {
+  const modalContent = document.getElementById("modal_content");
+  const selectedProject = projects[index];
+
+  const titleElement = modalContent.querySelector("h2");
+  titleElement.textContent = selectedProject.title;
+
+  const descriptionElement = modalContent.querySelector("p");
+  descriptionElement.textContent = selectedProject.description;
+
+  const imageElement = modalContent.querySelector("img");
+  imageElement.src = selectedProject.imageSrc;
+  imageElement.alt = selectedProject.title;
+
   modal.classList.remove("hide");
 }
 
